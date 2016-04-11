@@ -14,6 +14,9 @@
 		CD8F2D3D1CBBC8340046AB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8F2D3B1CBBC8340046AB76 /* LaunchScreen.storyboard */; };
 		CD8F2D481CBBC8340046AB76 /* CarthageCopyFrameworksFixtureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8F2D471CBBC8340046AB76 /* CarthageCopyFrameworksFixtureTests.swift */; };
 		CD8F2D531CBBC8340046AB76 /* CarthageCopyFrameworksFixtureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8F2D521CBBC8340046AB76 /* CarthageCopyFrameworksFixtureUITests.swift */; };
+		CD8F2D611CBBD7B00046AB76 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8F2D601CBBD7B00046AB76 /* Result.framework */; };
+		CD8F2D621CBBD7CC0046AB76 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8F2D601CBBD7B00046AB76 /* Result.framework */; };
+		CD8F2D631CBBD7D10046AB76 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8F2D601CBBD7B00046AB76 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		CD8F2D4E1CBBC8340046AB76 /* CarthageCopyFrameworksFixtureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageCopyFrameworksFixtureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8F2D521CBBC8340046AB76 /* CarthageCopyFrameworksFixtureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageCopyFrameworksFixtureUITests.swift; sourceTree = "<group>"; };
 		CD8F2D541CBBC8340046AB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8F2D601CBBD7B00046AB76 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8F2D611CBBD7B00046AB76 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8F2D621CBBD7CC0046AB76 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8F2D631CBBD7D10046AB76 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		CD8F2D261CBBC8340046AB76 = {
 			isa = PBXGroup;
 			children = (
+				CD8F2D601CBBD7B00046AB76 /* Result.framework */,
 				CD8F2D311CBBC8340046AB76 /* CarthageCopyFrameworksFixture */,
 				CD8F2D461CBBC8340046AB76 /* CarthageCopyFrameworksFixtureTests */,
 				CD8F2D511CBBC8340046AB76 /* CarthageCopyFrameworksFixtureUITests */,
@@ -135,6 +143,7 @@
 				CD8F2D2B1CBBC8340046AB76 /* Sources */,
 				CD8F2D2C1CBBC8340046AB76 /* Frameworks */,
 				CD8F2D2D1CBBC8340046AB76 /* Resources */,
+				CD8F2D661CBBD8620046AB76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +161,7 @@
 				CD8F2D3F1CBBC8340046AB76 /* Sources */,
 				CD8F2D401CBBC8340046AB76 /* Frameworks */,
 				CD8F2D411CBBC8340046AB76 /* Resources */,
+				CD8F2D651CBBD84F0046AB76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -170,6 +180,7 @@
 				CD8F2D4A1CBBC8340046AB76 /* Sources */,
 				CD8F2D4B1CBBC8340046AB76 /* Frameworks */,
 				CD8F2D4C1CBBC8340046AB76 /* Resources */,
+				CD8F2D641CBBD8230046AB76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,6 +262,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD8F2D641CBBD8230046AB76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$CARTHAGE_PATH copy-frameworks";
+		};
+		CD8F2D651CBBD84F0046AB76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$CARTHAGE_PATH copy-frameworks";
+		};
+		CD8F2D661CBBD8620046AB76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$CARTHAGE_PATH copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD8F2D2B1CBBC8340046AB76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CARTHAGE_PATH = /usr/local/bin/carthage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -361,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CARTHAGE_PATH = /usr/local/bin/carthage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -399,6 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageCopyFrameworksFixture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikesyo.CarthageCopyFrameworksFixture;
@@ -410,6 +472,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageCopyFrameworksFixture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikesyo.CarthageCopyFrameworksFixture;
@@ -421,6 +487,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageCopyFrameworksFixtureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikesyo.CarthageCopyFrameworksFixtureTests;
@@ -433,6 +503,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageCopyFrameworksFixtureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikesyo.CarthageCopyFrameworksFixtureTests;
@@ -444,6 +518,10 @@
 		CD8F2D5E1CBBC8340046AB76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageCopyFrameworksFixtureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikesyo.CarthageCopyFrameworksFixtureUITests;
@@ -455,6 +533,10 @@
 		CD8F2D5F1CBBC8340046AB76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageCopyFrameworksFixtureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikesyo.CarthageCopyFrameworksFixtureUITests;
@@ -482,6 +564,7 @@
 				CD8F2D591CBBC8340046AB76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8F2D5A1CBBC8340046AB76 /* Build configuration list for PBXNativeTarget "CarthageCopyFrameworksFixtureTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +573,7 @@
 				CD8F2D5C1CBBC8340046AB76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8F2D5D1CBBC8340046AB76 /* Build configuration list for PBXNativeTarget "CarthageCopyFrameworksFixtureUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +582,7 @@
 				CD8F2D5F1CBBC8340046AB76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

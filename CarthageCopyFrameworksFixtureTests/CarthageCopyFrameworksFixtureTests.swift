@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Result
 @testable import CarthageCopyFrameworksFixture
 
 class CarthageCopyFrameworksFixtureTests: XCTestCase {
@@ -22,6 +23,7 @@ class CarthageCopyFrameworksFixtureTests: XCTestCase {
     }
     
     func testExample() {
+        Result<String, NoError>.Success("")
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
