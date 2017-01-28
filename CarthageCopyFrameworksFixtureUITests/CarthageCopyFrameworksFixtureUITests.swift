@@ -30,7 +30,7 @@ class CarthageCopyFrameworksFixtureUITests: XCTestCase {
     }
     
     func testExample() {
-        Result<String, NoError>.Success("")
+        _ = Result<String, NoError>.success("")
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
